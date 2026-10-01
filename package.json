@@ -1,0 +1,14 @@
+{
+  "name": "jest-cache-key-repro",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "count": "rm -rf .jc && jest --silent && find .jc -path '*jest-transform-cache-*' -type f | wc -l"
+  },
+  "devDependencies": {
+    "@swc/core": "1.15.7",
+    "@swc/jest": "0.2.39",
+    "jest": "30.5.2",
+    "nanoid": "5.1.6"
+  }
+}
